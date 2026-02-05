@@ -1,0 +1,123 @@
+body {
+    margin: 0;
+    font-family: Georgia, 'Times New Roman', serif;
+    line-height: 1.7;
+}
+
+/* ALGEMEEN */
+
+header {
+    padding: 30px;
+    text-align: center;
+}
+
+nav a {
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+.card {
+    padding: 25px;
+    margin-bottom: 30px;
+    border-radius: 6px;
+}
+
+.gallery img {
+    width: 100%;
+    border-radius: 6px;
+    transition: transform 0.25s;
+}
+
+.gallery img:hover {
+    transform: scale(1.04);
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 15px;
+}
+
+/* FOTO KLIKB AAR */
+.gallery a {
+    display: block;
+}
+
+/* ---------- NORMAAL THEMA ---------- */
+
+.default {
+    background-color: #f4f4f4;
+    color: #222;
+}
+
+.default header {
+    background: #2c2c3a;
+    color: white;
+}
+
+.default nav a {
+    color: white;
+}
+
+.default .card {
+    background: white;
+}
+
+/* ---------- GRIMDARK (WARHAMMER) ---------- */
+
+.grimdark {
+    background-color: #0a0a0a;
+    color: #d6d0c4;
+}
+
+.grimdark header {
+    background: linear-gradient(90deg, #200000, #000000);
+    border-bottom: 2px solid #550000;
+}
+
+.grimdark nav a {
+    color: #d6b46a;
+}
+
+.grimdark .card {
+    background-color: #111;
+    border: 1px solid #3a0000;
+}
+
+.grimdark h1, .grimdark h2, .grimdark h3 {
+    color: #d6b46a;
+    letter-spacing: 1px;
+}
+
+/* ---------- LOTR THEMA ---------- */
+
+.lotr {
+    background-color: #e8e2c8;
+    color: #2f2b1f;
+}
+
+.lotr header {
+    background: #3e5a2d;
+    color: #f5f1d6;
+}
+
+.lotr nav a {
+    color: #f5f1d6;
+}
+
+.lotr .card {
+    background-color: #f5f1d6;
+    border: 1px solid #b6a571;
+}
+
+.lotr h1, .lotr h2 {
+    font-family: Georgia, serif;
+    letter-spacing: 1px;
+}
